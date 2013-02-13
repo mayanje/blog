@@ -1,0 +1,20 @@
+{
+  "name": "blogablog",
+  "version": "0.0.0",
+  "description": "Blog for the sake of blogging about making a blog and other interesting topics of the interface variety",
+  "main": "server.js",
+  "dependencies": {
+    "hogan.js": "~2.0.0",
+    "node-static": "~0.6.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/park9140/blogablog.git"
+  },
+  "license": "BSD"
+}
