@@ -16,5 +16,9 @@
     "type": "git",
     "url": "git://github.com/park9140/blogablog.git"
   },
+  "engines": {
+    "node": "0.8.x",
+    "npm":  "1.1.x"
+  },
   "license": "BSD"
 }
