@@ -6,9 +6,13 @@ require.config({
         backbone :'lib/backbone-min',
         jquery : 'lib/jquery-1.9.0.min',
         hogan : 'lib/hogan-2.0.0.amd',
-        underscore : 'lib/underscore-min'
+        underscore : 'lib/underscore-min',
+        showdown: 'lib/showdown'
     },
     shim: {
+        'showdown': {
+            exports: 'Showdown'
+        },
         'backbone': {
             deps: ['underscore', 'jquery'],
             exports: 'Backbone'
@@ -26,7 +30,7 @@ require.config({
         // want to specify the template extension for each individual file
         // the default value is ".mustache"
         templateExtension : '.mustache',
-        templateDir : '../../templates/',
+        templateDir : '../../../templates/',
 
         // if you need to set custom options it can be done through the
         // "compilationOptions" setting, check hogan documentation:

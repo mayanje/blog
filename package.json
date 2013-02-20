@@ -5,7 +5,9 @@
   "main": "server.js",
   "dependencies": {
     "hogan.js": "~2.0.0",
-    "node-static": "~0.6.7"
+    "restify": "~2.2.1",
+    "node-static": "~0.6.7",
+    "mongoose": "~3.5.6"
   },
   "devDependencies": {},
   "scripts": {
@@ -18,7 +20,7 @@
   },
   "engines": {
     "node": "0.8.x",
-    "npm":  "1.1.x"
+    "npm": "1.1.x"
   },
   "license": "BSD"
 }

@@ -1,6 +1,4 @@
 define(['backbone','hgn!main'],function(backbone,template){
-
-	var TO_RADIANS = Math.PI/180; 
 	return Backbone.View.extend({
 		tagName:"section",
 		className:"main",
@@ -9,7 +7,8 @@ define(['backbone','hgn!main'],function(backbone,template){
 			this.$el.empty().append(template({}));
 			return this;
 		},
-		initializeContext: function(){
+		setPage: function(view){
+			this.$("#content").empty().append(view.render().el);
 		}
 	})
 
