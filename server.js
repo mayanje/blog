@@ -4,7 +4,7 @@ var mongoose = require('mongoose');
 //
 var port = process.env.PORT ? process.env.PORT : 8080;
 var apiKey = process.env.API_KEY ? process.env.API_KEY : "devkey";
-var mongoServer = process.env.MONGO_SERVER ? process.env.MONGO_SERVER : "mongodb://localhost/blogablog";
+var mongoServer = process.env.MONGOHQ_URL ? process.env.MONGOHQ_URL : "mongodb://localhost/blogablog";
 
 mongoose.connect(mongoServer);
 
