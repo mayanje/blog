@@ -49,7 +49,7 @@ function redirect(req, res, next) {
 }
 server.get(/^\/.*/, function(req,res,next){
     console.log("path",req.path());
-    if(!req.url.match(/\.[\w]*$/))
+    if(!req.url.match(/\.[\w]*(\?.*)?$/))
         req.path = function(){return "/index.html";};
     restify.serveStatic({
       directory: './public'
