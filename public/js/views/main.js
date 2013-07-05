@@ -8,7 +8,7 @@ define(['backbone','hgn!main'],function(backbone,template){
 			return this;
 		},
 		setPage: function(view){
-			this.$("#content").empty().append(view.render().el);
+			this.$(".content .area").empty().append(view.render().el);
 		}
 	})
 
