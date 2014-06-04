@@ -17,3 +17,34 @@ If you want to use this tool, it uses basic uml syntax and can generate charts l
   [DeliveryMethod]^[National], 
   [DeliveryMethod]^[International]
 )
+
+This chart is rendered into the markdown of this blog post using the following markdown
+
+```md
+![class diagram](http://yuml.me/diagram/class/
+  [note: You can stick notes on diagrams too!{bg:cornsilk}],
+  [Customer]<>1-orders 0..*>[Order], 
+  [Order]++*-*>[LineItem], 
+  [Order]-1>[DeliveryMethod], 
+  [Order]*-*>[Product], 
+  [Category]<->[Product], 
+  [DeliveryMethod]^[National], 
+  [DeliveryMethod]^[International]
+)
+```
+
+As you can see this is a basic image embed wrapping a couple lines of uml, shown below for clarity.
+
+```xml
+  [note: You can stick notes on diagrams too!{bg:cornsilk}],
+  [Customer]<>1-orders 0..*>[Order], 
+  [Order]++*-*>[LineItem], 
+  [Order]-1>[DeliveryMethod], 
+  [Order]*-*>[Product], 
+  [Category]<->[Product], 
+  [DeliveryMethod]^[National], 
+  [DeliveryMethod]^[International]
+```
+
+Because of the capability of markdown on github to automatically url encode the uml data into the url.  Plus the robustness the yuml.me tool parsing of url parameters we can cleanly write uml in our markdown file.  This allows us to simply update our charts and not require complex tools to render our charts and update built diagrams.
+
