@@ -46,5 +46,5 @@ As you can see this is a basic image embed wrapping a couple lines of uml, shown
   [DeliveryMethod]^[International]
 ```
 
-Because of the capability of markdown on github to automatically url encode the uml data into the url.  Plus the robustness the yuml.me tool parsing of url parameters we can cleanly write uml in our markdown file.  This allows us to simply update our charts and not require complex tools to render our charts and update built diagrams.
+Github markdown gives us the capability to automatically url encode the uml data into the image url.  This, plus the robustness the yuml.me tool parsing of url parameters, gives us the ability to cleanly write uml in our markdown file.  This allows us to simply update our charts and not require complex tools to render our charts and update built diagrams.
 
