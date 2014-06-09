@@ -35,7 +35,7 @@ This chart is rendered into the markdown of this blog post using the following m
 
 As you can see this is a basic image embed wrapping a couple lines of uml, shown below for clarity.
 
-```xml
+```uml
   [note: You can stick notes on diagrams too!{bg:cornsilk}],
   [Customer]<>1-orders 0..*>[Order], 
   [Order]++*-*>[LineItem], 
