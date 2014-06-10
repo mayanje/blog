@@ -1,0 +1,4 @@
+Recently, I ran into some trouble hosting files in Amazon S3.  Latency into china is insanely high.  
+Nothing about the particular files makes the latency high. However, we often time out trying to access these files.  
+For anyone who wants to avoid this latency just set up [cloudfront](http://aws.amazon.com/cloudfront/). Just do it
+it will be worth the extra couple cents per gigabyte.
