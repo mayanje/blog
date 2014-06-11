@@ -1,4 +1,6 @@
-Recently, I ran into some trouble hosting files in Amazon S3.  Latency into china is insanely high.  
+Recently, I ran into some trouble hosting files in Amazon S3.  Latency reading S3 buckets from china is insanely high.
+This is sometimes in excess of 60 seconds to load a given file from S3.
+
 Nothing about the particular files makes the latency high. However, we often time out trying to access these files.  
-For anyone who wants to avoid this latency just set up [cloudfront](http://aws.amazon.com/cloudfront/). Just do it
+For anyone who wants to avoid this latency just set up [cloudfront](http://aws.amazon.com/cloudfront/). Just do it,
 it will be worth the extra couple cents per gigabyte.
